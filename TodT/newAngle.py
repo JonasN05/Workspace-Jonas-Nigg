@@ -20,6 +20,8 @@ def changeAngle(xPos):
     return newDuty
 
 
+
+
 try:
 
     while True:
@@ -29,12 +31,15 @@ try:
                 print("duty ",duty)
                 pwm.ChangeDutyCycle(duty)
                 time.sleep(0.1)
+                pwm.ChangeDutyCycle(0)
         elif(xPos>320):
             if(xPos - 30 > 320):
                 duty = changeAngle(xPos)
                 print("duty ", duty)
                 pwm.ChangeDutyCycle(duty)
                 time.sleep(0.1)
+                pwm.ChangeDutyCycle(0)
+
 
 
 except KeyboardInterrupt:

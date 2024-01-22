@@ -16,7 +16,7 @@ duty = 7.5
 pixel = 320
 
 def changeAngle(angle):
-    pixelNew = 320/7.5*angle
+    pixelNew = 320/9.5*angle
     return pixelNew
 
 try:
